@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/message.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>ROOM </title>
+</head>
+
+<body>
+
+    <header id="cabeceralogo">
+        <div>
+            <h1>MESSAGE</h1>
+        </div>
+    </header>
+    <div class="container_table_dc3">
+        <table>
+            <thead>
+                <tr>
+                    <td>MESSAGE</td>
+                    <td>ROOM</td>
+                    <td>CLIENT</td>
+                    
+                </tr>
+            </thead>
+        </table>
+    </div>
+        <div id="resultado4"></div>
+        <script type="text/javascript">
+            window.onload = autoInicioMessage();
+            window.onload = autoInicioRoom();
+            window.onload = autoInicioCliente();
+
+        </script>
+        <div class="table_dc_f4">
+
+            <input type="text" id="MsmessageText" placeholder="mensaje">
+            <select id="select-room"></select>
+            <select id="select-client"></select>
+
+        </div>
+        
+        <div class="container_btns">
+            <button onclick="guardarInformacionMensajes()">Save</button>
+            
+        </div>
+        <a href="index.html"><input type="button" value="back to top" class="btn_volver"></a>
+</body>
+
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/category.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>CATEGORY </title>
+</head>
+
+<body>
+    <header id="cabeceralogo">
+
+        <div>
+            <h1>CATEGORY</h1>
+        </div>
+    </header>
+    <div class="container_table_dc_1">
+    <table>
+        <thead>
+            <tr>
+                <td>NAME</td>
+                <td>DESCRIPTION</td>
+                
+                
+            </tr>
+        </thead>
+           
+    </table>
+</div>
+    <div id="resultado1"></div>
+    <script type="text/javascript">
+        window.onload = autoInicioCategoria();
+    </script>
+    <div class="table_dc_f1">
+        <input type="text" id="Cname" placeholder="Name">
+        <input type="text" id="Cdescription" placeholder="Description">
+
+    </div>
+    <div class="container_btns_1">
+    <button onclick="guardarInformacionCategorias()">Save</button>
+    
+</div>
+<a href="index.html"><input type="button" value="back to top" class="btn_volver"></a>
+    
+
+</body>
+
+</html>

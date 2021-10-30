@@ -1,0 +1,339 @@
+figure{
+ 
+    display: flex;
+    justify-content: center;
+    
+    
+}   
+#bienvenida{
+    
+ position: relative;
+display: inline-block;
+text-align: center; 
+} 
+
+
+
+.centrado{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    font-size: xx-large;
+}
+.btns{
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    flex-wrap: wrap;
+}
+
+h2{
+    margin: 70px 0 20px;
+    letter-spacing: 3px;
+    font-size: 50px;
+    text-align: center;
+    font-family:serif;
+    text-shadow: 0px 0px 20px  #546985;
+    color:white;
+}
+
+
+.btn:volver {
+    border:2px solid blue;
+    box-shadow: 0px 0px 7px #4d7ce0;
+    background-color: #6FACC6;
+    
+}
+
+
+
+
+#cabeceralogo {
+    width: 96%;
+    height: 150px;
+    padding: 0% 2%;
+    text-align: center;
+    background-color: #0F76A0;
+    
+
+    }
+    #cabeceralogo > div {
+    width: 960px;
+    margin: 0px auto;
+    padding-top: 45px;
+    
+    }
+    #cabeceralogo h1 {
+    font: bold 54px Arial, sans-serif;
+    color: #FFFFFF;
+    font-style: italic;
+    }
+
+    
+ 
+#menuprincipal {
+width: 96%;
+height: 80px;
+padding: 0% 2%;
+text-align-last: center;
+background-color: #9FC8D9;
+border-top: 1px solid #094660;
+border-bottom: 1px solid #094660;
+
+}
+#menuprincipal > div {
+width: 960px;
+margin: 0px auto;
+
+}
+#menuprincipal li {
+    display: inline-block;
+    height: 35px;
+    padding: 15px 10px 0px 10px;
+    margin-right: 5px;
+    
+    }
+    #menuprincipal li:hover {
+    background-color: #6FACC6;
+    }
+    #menuprincipal a {
+    font: bold 18px Arial, sans-serif;
+    color: #333333;
+    text-decoration: none;
+    }
+   /* //esta es la tabla las propiedades */
+    table {
+        position: absolute;
+    top: 40%;
+    left: 30%;
+        width: 40%;
+        height: 30px;
+        margin:  auto;
+       /*  background-color:#9FC8D9; //para el color en la tabla*/
+        border-collapse: collapse;
+        vertical-align: top;
+        border: 2px solid #4d7ce0;
+       
+        
+        
+     }
+     th {
+        width: 5%;
+        text-align: left;
+        vertical-align: top; 
+       border: 1px solid #4d7ce0;
+        text-align: center; 
+        
+      
+        
+     } 
+
+       
+
+/*  para acomodar los nombres de las columnas */
+    td {
+        width: 60%;
+        height: min-content;
+        text-align: left;
+        vertical-align: super;
+        border: 1px solid #4d7ce0; 
+        text-align: center;
+
+
+        
+        
+            
+        
+   }
+    /*  para los nombres de las tablas  */         
+   .container_table_dc{
+    
+    height: 80px;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    margin:auto;
+    
+    
+}           
+     /* para las cajas de texto */               
+   .table_dc_f3{
+    
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    
+}           
+                
+.container_btns{
+
+    position: absolute;
+    top: 65%;
+    left: 45%;
+    height: 5%;
+    width: 5%;
+    text-align: center;
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    
+    
+    
+}               
+/*  para los nombres de categoria las tablas  */ 
+.container_table_dc_1{
+    
+    height: 90px;
+    position: absolute;
+     top: 30%; 
+     left: 20%; 
+     display: flex; 
+    flex-direction: column; 
+    width: 705px;
+    margin:auto;
+    
+    
+}   
+
+.table_dc_f1{
+    
+    position: absolute;
+    top: 60%;
+    left: 35%;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    
+}  
+
+.container_btns_1{
+
+    position: absolute;
+    top: 65%;
+    left: 45%;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+ 
+}              
+    
+ /*  para los nombres de room las tablas  */ 
+.container_table_dc_2{
+    
+    height: 90px;
+    position: absolute;
+     top: 30%; 
+     left: 20%; 
+     display: flex; 
+    flex-direction: column; 
+    width: 705px;
+    margin:auto;
+    
+    
+}      
+/* para las cajas de texto */
+.table_dc_f2{
+    
+    position: absolute;
+    top: 70%;
+    left: 20%;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    
+}  
+.container_btns_2{
+
+    position: absolute;
+    top: 75%;
+    left: 45%;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+ 
+}       
+/*  para los nombres de mensajes las tablas  */ 
+
+.container_table_dc3{
+    
+    height: 90px;
+    position: absolute;
+     top: 30%; 
+     left: 34%; 
+     display: flex; 
+    flex-direction: column; 
+    width: 705px;
+    margin:auto;
+    
+    
+}      
+
+/* para las cajas de texto */
+.table_dc_f4{
+    
+    position: absolute;
+    top: 60%;
+    left: 38%;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    
+}  
+/*  para los nombres de reservation las tablas  */ 
+
+.container_table_dc5{
+    
+    height: 90px;
+    position: absolute;
+     top: 30%; 
+     left: 14.99%; 
+     display: flex; 
+    flex-direction: column; 
+    width: 705px;
+    margin:auto;
+    
+    
+}      
+/* para las cajas de texto */
+.table_dc_f5{
+    
+    position: absolute;
+    top: 60%;
+    left: 30%;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    
+}  
+.container_btns3{
+
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+ 
+}    
+

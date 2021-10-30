@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/room.js"></script>
+    <script type="text/javascript" src="js/category.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>ROOM </title>
+</head>
+
+<body>
+
+    <header id="cabeceralogo">
+        <div>
+            <h1>ROOM</h1>
+        </div>
+    </header>
+    <div class="container_table_dc_2">
+        <table>
+            <thead>
+                <tr>
+                    <td>NAME</td>
+                    <td>HOTEL</td>
+                    <td>STARS</td>
+                    <td>DESCRIPTION</td>
+                    <td>CATEGORY</td>
+                </tr>
+            </thead>
+        </table>
+    </div>
+        <div id="resultado2"></div>
+        <script type="text/javascript">
+            window.onload = autoInicioRoom();
+            window.onload = autoInicioCategoria();
+        </script>
+        <div class="table_dc_f2">
+            <input type="text" id="Oname" placeholder="name">
+            <input type="text" id="Ohotel" placeholder="hotel">
+            <input type="number" id="Ostars" placeholder="stars">
+            <input type="text" id="Odescription" placeholder="description">
+            <select id="select-category"></select>
+        </div>
+        <div class="container_btns_2">
+            <button onclick="guardarInformacionRoom()">Save</button>
+        </div>
+        <a href="index.html"><input type="button" value="back to top" class="btn_volver"></a>
+
+
+</body>
+
+
+</html>

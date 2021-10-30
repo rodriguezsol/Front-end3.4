@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/client.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>ROOM </title>
+</head>
+
+<body>
+    <header id="cabeceralogo">
+        <div>
+            <h1>CLIENT</h1>
+        </div>
+    </header>
+    <div class="container_table_dc">
+        <table >
+            <thead>
+                <tr >
+                    <td>EMAIL</td>
+                    <td>PASSWORD</td>
+                    <td>NAME</td>
+                    <td>AGE</td>
+                </tr>
+            </thead>
+        </table>
+    </div>
+        <div id="resultado3"></div>
+        <script type="text/javascript">
+            window.onload = autoInicioCliente();
+        </script>
+        <div class="table_dc_f3">
+            <input type="text" id="Clemail" placeholder="email">
+            <input type="text" id="Clpassword" placeholder="password">
+            <input type="text" id="Clname" placeholder="nombre">
+            <input type="number" id="Clage" placeholder="edad">
+        </div>
+        
+        <div class="container_btns">
+            <button onclick="guardarInformacionCliente()">Save</button>
+            
+        </div>
+
+        <a href="index.html"><input type="button" value="back to top" class="btn_volver"></a>
+</body>
+
+
+</html>
