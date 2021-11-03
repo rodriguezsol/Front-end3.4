@@ -24,7 +24,6 @@ function autoInicioCategoria(){
         type:"GET",
         datatype:"JSON",
         success:function(JSON){
-            
             let $select = $("#select-category");
             $.each(JSON, function (id, name) {
                 $select.append('<option value='+name.id+'>'+name.name+'</option>');
@@ -40,17 +39,21 @@ function pintarRespuesta1(respuesta){
     let myTable="<table>";
     for(i=0;i<respuesta.length;i++){
         myTable+="<tr>";
+        myTable+="<th>Name</th>";
         myTable+="<td>"+respuesta[i].name+"</td>";
+        myTable+="<th>Hotel</th>";
         myTable+="<td>"+respuesta[i].hotel+"</td>";
+        myTable+="<th>Stars</th>";
         myTable+="<td>"+respuesta[i].stars+"</td>";
+        myTable+="<th>Descriptión</th>";
         myTable+="<td>"+respuesta[i].description+"</td>";
-        myTable+="<td>"+respuesta[i].category.name+"</td>";
+        /* myTable+="<td>"+respuesta[i].category.name+"</td>"; */
         myTable+="<td> <button onclick=' actualizarInformacionRoom("+respuesta[i].id+")'>Update</button>";
         myTable+="<td> <button onclick='borrarRoom("+respuesta[i].id+")'>Delete</button>";
         myTable+="</tr>";
     }
     myTable+="</table>";
-    $("#resultado2").html(myTable);
+    $("#resultado").html(myTable);
 }
 
 function guardarInformacionRoom(){

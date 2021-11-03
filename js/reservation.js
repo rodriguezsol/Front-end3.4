@@ -60,11 +60,17 @@ function pintarRespuesta5(respuesta){
     let myTable="<table>";
     for(i=0;i<respuesta.length;i++){
         myTable+="<tr>";
+        myTable+="<th>StartDate</th>";
         myTable+="<td>"+respuesta[i].startDate+"</td>";
+        myTable+="<th>DevolutionDate</th>";
         myTable+="<td>"+respuesta[i].devolutionDate+"</td>";
+        myTable+="<th>Status</th>";
         myTable+="<td>"+respuesta[i].status+"</td>";
+        myTable+="<th>Room</th>";
         myTable+="<td>"+respuesta[i].room.name+"</td>";
+        myTable+="<th>Client</th>";
         myTable+="<td>"+respuesta[i].client.name+"</td>";
+        myTable+="<th>Email</th>";
         myTable+="<td>"+respuesta[i].client.email+"</td>";
         
         myTable+="<td> <button onclick=' actualizarInformacionReserva("+respuesta[i].idReservation+")'>Update</button>";

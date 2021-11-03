@@ -60,8 +60,11 @@ function pintarRespuesta4(respuesta){
     let myTable="<table>";
     for(i=0;i<respuesta.length;i++){
         myTable+="<tr>";
+        myTable+="<th>Message</th>";
         myTable+="<td>"+respuesta[i].messageText+"</td>";
+        myTable+="<th>Room</th>";
         myTable+="<td>"+respuesta[i].room.name+"</td>";
+        myTable+="<th>Client</th>";
         myTable+="<td>"+respuesta[i].client.name+"</td>";
         myTable+="</tr>";
     }

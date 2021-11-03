@@ -23,7 +23,9 @@ function pintarRespuesta(respuesta){
     
     for(i=0;i<respuesta.length;i++){
         myTable+="<tr>";
+        myTable+="<th>Name</th>";
         myTable+="<td>"+respuesta[i].name+"</td>";
+        myTable+="<th>Descriptión</th>";
         myTable+="<td>"+respuesta[i].description+"</td>";
         myTable+="<td> <button onclick=' actualizarInformacionCategorias("+respuesta[i].id+")'>Update</button>";
         myTable+="<td> <button onclick='borrarCategoria("+respuesta[i].id+")'>Delete</button>";

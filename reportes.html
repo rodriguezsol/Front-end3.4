@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/reportes.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>REPORTS</title>
+</head>
+
+<body>
+
+    <header id="cabeceralogo">
+        <div>
+            <h1>REPORTS</h1>
+        </div>
+    </header>
+
+        <div class="table_dc_f7">
+        <div id="resultadoStatus"></div>
+        </div>
+        <div class="table_dc_f8">
+        <div id="resultadoClientes"></div>
+        </div>
+        <script type="text/javascript">
+            /* window.onload = autoInicioReportes(); */
+            
+        </script>
+        <div class="table_dc_f6">
+            <div id="resultadoDate">
+            <input type="date" id="TstarDate" placeholder="descripcion">
+            <input type="date" id="TdevolutionDate" placeholder="descripcion">
+             <button onclick="traerReporteDate()">Generate Reports by date</button>
+        </div>
+        </div>
+        <div class="container_btns_6">
+            <button onclick="traerReporteStatus()">Generate Reservation Reports</button>
+            <button onclick="traerReporteClientes()">Generate customer and quantity reports</button>
+           
+        </div>
+        
+        
+        
+        </div>
+        <a href="index.html"><input type="button" value="back to top" class="btn_volver"></a>
+
+
+</body>
+
+
+</html>

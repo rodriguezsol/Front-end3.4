@@ -17,10 +17,13 @@ function pintarRespuesta2(respuesta){
     let myTable="<table>";
     for(i=0;i<respuesta.length;i++){
         myTable+="<tr>";
-        
+        myTable+="<th>Email</th>";
         myTable+="<td>"+respuesta[i].email+"</td>";
+        myTable+="<th>Password</th>";
         myTable+="<td>"+respuesta[i].password+"</td>";
+        myTable+="<th>Name</th>";
         myTable+="<td>"+respuesta[i].name+"</td>";
+        myTable+="<th>Age</th>";
         myTable+="<td>"+respuesta[i].age+"</td>";
         myTable+="<td> <button onclick=' actualizarInformacionCliente("+respuesta[i].idClient+")'>Update</button>";
         myTable+="<td> <button onclick='borrarCliente("+respuesta[i].idClient+")'>Delete</button>";
